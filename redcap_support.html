@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>REDCap Support at ACU</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+	
+        <link rel="stylesheet" href="dist/theme/gruvbox.css" id="theme">
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/gruvbox-dark.css">
+        
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+                <section id="intro" data-auto-animate data-markdown="redcap_support.md" data-separator="^---$" data-separator-vertical="^\+\+\+$" notes-separator="^[nN]otes?:"></section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="node_modules/reveal.js-menu/menu.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+
+    <script>
+    // More info about initialization & config:
+    // - https://revealjs.com/initialization/
+    // - https://revealjs.com/config/
+    Reveal.initialize({
+        width: 1000,
+        height: 800,
+        margin: 0.02,
+        hash: true,
+        transition: 'convex',
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMenu, RevealZoom ],
+        notes_pointer: {
+            pointer: {
+                size: 15,  // in pixels (scaled like the rest of reveal.js)
+                color: '#cc241d',  // something valid for css background-color
+                key: 'A'
+            },
+            notes: {
+                key: 'S'
+            },
+
+        },
+
+        menu: {
+            themes: [
+                        { name: 'Black', theme: 'dist/theme/black.css' },
+                        { name: 'Gruvbox', theme: 'dist/theme/gruvbox.css' },
+                        { name: 'Intersect Dark', theme: 'dist/theme/intersect_dark.css' },
+                        { name: 'Intersect Light', theme: 'dist/theme/intersect_light.css' },
+                        { name: 'ACU Dark', theme: 'dist/theme/acu_dark.css' },
+                        { name: 'ACU Light', theme: 'dist/theme/acu_light.css' }
+                        ],
+            transitions: true
+        },
+        'embed-video': { path: '../plugin/embed-video' },
+
+        dependencies: [
+            { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+            { src: 'plugin/zoom/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+            { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; }},
+            { src: 'plugin/embed-video/reveal-embed-video.js' },
+                               // ...
+
+            {src: 'node_modules/reveal.js-notes-pointer/notes-pointer.js'}
+            // async is optional
+        ]
+    });
+</script>
+</body>
+</html>
