@@ -30,6 +30,7 @@
     <script src="reveal.js/plugin/markdown/markdown.js"></script>
     <script src="reveal.js/plugin/highlight/highlight.js"></script>
     <script src="reveal.js/plugin/zoom/zoom.js"></script>
+    <script src="plugin/menu/menu.js"></script>
     <script>
       // More info about initialization & config:
       // - https://revealjs.com/initialization/
@@ -38,7 +39,19 @@
         hash: true,
 
         // Learn about plugins: https://revealjs.com/plugins/
-        plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom],
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom, RevealMenu],
+        menu: {
+            themes: [
+                        { name: 'Black', theme: 'dist/theme/black.css' },
+                        { name: 'Gruvbox', theme: 'dist/theme/gruvbox.css' },
+                        { name: 'Intersect Dark', theme: 'dist/theme/intersect_dark.css' },
+                        { name: 'Intersect Light', theme: 'dist/theme/intersect_light.css' },
+                        { name: 'ACU Dark', theme: 'dist/theme/acu_dark.css' },
+                        { name: 'ACU Light', theme: 'dist/theme/acu_light.css' },
+                        { name: 'REDCap', theme: 'dist/theme/redcap.css' }
+                        ],
+            transitions: true
+        },
       });
     </script>
   </body>

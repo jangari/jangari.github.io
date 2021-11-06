@@ -1,0 +1,3 @@
+[submodule "slides/plugin/menu"]
+	path = slides/plugin/menu
+	url = git@github.com:denehyg/reveal.js-menu.git
