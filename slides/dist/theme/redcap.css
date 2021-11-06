@@ -9,14 +9,14 @@ html * {
  * GLOBAL STYLES
  *********************************************/
 :root {
-  --r-background-color: #282828;
-  --r-main-font: Operator Mono, Lato, sans-serif;
+  --r-background-color: #000;
+  --r-main-font: Arial, sans-serif, 'Raleway', Helvetica Neue;
   --r-main-font-size: 40px;
-  --r-main-color: #ebdbb2;
+  --r-main-color: #fff;
   --r-block-margin: 20px;
   --r-heading-margin: 0 0 20px 0;
-  --r-heading-font: Operator Mono, Impact, sans-serif;
-  --r-heading-color: #458588;
+  --r-heading-font: Arial, sans-serif, 'Raleway', Helvetica Neue;
+  --r-heading-color: #e84545;
   --r-heading-line-height: 1.2;
   --r-heading-letter-spacing: normal;
   --r-heading-text-transform: none;
@@ -28,16 +28,20 @@ html * {
   --r-heading3-size: 1.55em;
   --r-heading4-size: 1em;
   --r-code-font: monospace;
-  --r-link-color: #fabd2f;
-  --r-link-color-dark: #d79921;
-  --r-link-color-hover: #fe8019;
-  --r-selection-background-color: #ebdbb2;
-  --r-selection-color: #282828;
+  --r-link-color: #e84545;
+  --r-link-color-dark: #c81919;
+  --r-link-color-hover: #c81919;
+  --r-selection-background-color: #666;
+  --r-selection-color: #fff;
 }
 
 .reveal-viewport {
-  background: #1d2021;
+  background: #000;
   background-color: var(--r-background-color);
+  background-image: url(https://projectredcap.org/wp-content/themes/rcap/images/redcap_logo_high_res_white_on_black.svg);
+  background-repeat: no-repeat;
+  background-position: 2% 2%;
+  background-size: 10%;
 }
 
 .reveal {
