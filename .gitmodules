@@ -3,4 +3,4 @@
 	url = https://github.com/denehyg/reveal.js-menu.git
 [submodule "slides/reveal.js"]
 	path = slides/reveal.js
-	url = git@github.com:hakimel/reveal.js.git
+	url = https://github.com/hakimel/reveal.js.git
