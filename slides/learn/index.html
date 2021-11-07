@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>Intersect Training</title>
+
+        <link rel="stylesheet" href="../reveal.js/dist/reset.css" />
+        <link rel="stylesheet" href="../reveal.js/dist/reveal.css" />
+
+        <link rel="stylesheet" href="../dist/theme/intersect_dark.css" id="theme">
+        <!-- Theme used for syntax highlighted code -->
+        <link rel="stylesheet" href="../plugin/highlight/gruvbox-dark.css">
+
+    </head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+                <section id="course_title" data-markdown="course_select.html">
+                </section>
+                <section id="acknowledgement_of_country" data-markdown="intersect_common/aoc.html">
+                </section>
+                <section id="intersect_intro" nologo data-markdown="intersect_common/intersect_intro.html">
+                </section>
+                <section data-auto-animate id="uni_intro">
+                </section>
+                <section id="course_intro">
+                </section>
+                <section id="coda" data-markdown="intersect_common/intersect_closing.html">
+                </section>
+			</div>
+		</div>
+
+		<script src="../reveal.js/dist/reveal.js"></script>
+		<script src="../reveal.js/plugin/notes/notes.js"></script>
+		<script src="../reveal.js/plugin/markdown/markdown.js"></script>
+		<script src="../reveal.js/plugin/highlight/highlight.js"></script>
+		<script src="../reveal.js/plugin/zoom/zoom.js"></script>
+
+    <script type="text/javascript">
+    function loadResources(){
+    const courses = {"excel101": "Excel for Researchers",
+                    "redcap101": "Data Capture and Surveys with REDCap",
+                    "r101": "Learn to Program: R"};
+    const unis =    
+        {"une": "University of New England",
+        "uts": "University of Technology, Sydney",
+        "usyd": "The University of Sydney",
+        "unsw": "University of New South Wales",
+        "acu": "Australian Catholic University",
+        "scu": "Southern Cross University",
+        "uon": "University of Newcastle",
+        "uc": "University of Canberra",
+        "deakin": "Deakin University",
+        "csu": "Charles Sturt University",
+        "ltu": "La Trobe University",
+        "wsu": "Western Sydney University",
+        "uoa": "University of Adelaide",
+        "open": "Intersect Australia",
+        "nci": "NCI"};
+
+    const params = new URLSearchParams(window.location.search);
+    if (params.has('course')){
+        var course = params.get('course').toLowerCase();
+        if (course in courses){
+            var course_title_path = "course_title/" + course + ".html";
+            document.getElementById("course_title").setAttribute("data-markdown",course_title_path);
+            var course_intro_path = "course_intro/" + course + ".html";
+            document.getElementById("course_intro").setAttribute("data-markdown",course_intro_path);
+            document.title = courses[course] + " – A course by Intersect";
+        } else {}; // Course does not exist
+    } else {}; // No course paramter; load start page.
+    if (params.has('uni')){
+        var uni = params.get('uni').toLowerCase();
+        var uni_intro_path = "uni_intro/" + uni + ".html";
+        if (uni in unis){
+            document.getElementById("uni_intro").setAttribute("data-markdown",uni_intro_path);
+        } else {
+            document.getElementById("uni_intro").setAttribute("data-visibility","hidden");
+        }
+    } else {
+// if no uni query string parameter
+            document.getElementById("uni_intro").setAttribute("data-visibility","hidden");
+    };
+    }
+    loadResources();
+    </script>
+    <script>
+    // More info about initialization & config:
+    // - https://revealjs.com/initialization/
+    // - https://revealjs.com/config/
+    Reveal.initialize({
+        width: 1000,
+        height: 800,
+        margin: 0.02,
+        hash: true,
+        transition: 'convex',
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMenu, RevealZoom ],
+
+        menu: {
+            themes: [
+                        { name: 'Black', theme: '../dist/theme/black.css' },
+                        { name: 'Gruvbox', theme: '../dist/theme/gruvbox.css' },
+                        { name: 'Intersect Dark', theme: '../dist/theme/intersect_dark.css' },
+                        { name: 'Intersect Light', theme: '../dist/theme/intersect_light.css' },
+                        { name: 'ACU Dark', theme: '../dist/theme/acu_dark.css' },
+                        { name: 'ACU Light', theme: '../dist/theme/acu_light.css' }
+                        ],
+            transitions: true
+        },
+
+        dependencies: [
+            { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+            { src: 'plugin/zoom/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+            { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; }}
+                               // ...
+
+            // async is optional
+        ]
+    });
+</script>
+</body>
+</html>
