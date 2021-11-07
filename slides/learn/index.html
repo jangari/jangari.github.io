@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
         <title>Intersect Training</title>
 
@@ -37,6 +37,7 @@
 		<script src="../reveal.js/plugin/markdown/markdown.js"></script>
 		<script src="../reveal.js/plugin/highlight/highlight.js"></script>
 		<script src="../reveal.js/plugin/zoom/zoom.js"></script>
+        <script src="../plugin/menu/menu.js"></script>
 
     <script type="text/javascript">
     function loadResources(){
@@ -99,7 +100,6 @@
 
         // Learn about plugins: https://revealjs.com/plugins/
         plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMenu, RevealZoom ],
-
         menu: {
             themes: [
                         { name: 'Black', theme: '../dist/theme/black.css' },
@@ -110,17 +110,7 @@
                         { name: 'ACU Light', theme: '../dist/theme/acu_light.css' }
                         ],
             transitions: true
-        },
-
-        dependencies: [
-            { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-            { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-            { src: 'plugin/zoom/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-            { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; }}
-                               // ...
-
-            // async is optional
-        ]
+        }
     });
 </script>
 </body>
