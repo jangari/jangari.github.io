@@ -1,4 +1,6 @@
 @import url(./fonts/operator-mono/operator-mono.css);
+@import url(https://cdn.jsdelivr.net/gh/dreampulse/computer-modern-web-font@master/fonts.css);
+@import url(https://fontlibrary.org//face/fantasque-sans-mono);
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
 html * {
   color-profile: sRGB;
@@ -10,12 +12,12 @@ html * {
  *********************************************/
 :root {
   --r-background-color: #282828;
-  --r-main-font: Operator Mono, Lato, sans-serif;
+  --r-main-font: "Computer Modern Serif", Lato, sans-serif;
   --r-main-font-size: 40px;
   --r-main-color: #ebdbb2;
   --r-block-margin: 20px;
   --r-heading-margin: 0 0 20px 0;
-  --r-heading-font: Operator Mono, Impact, sans-serif;
+  --r-heading-font: "Computer Modern Serif", Lato, sans-serif;
   --r-heading-color: #458588;
   --r-heading-line-height: 1.2;
   --r-heading-letter-spacing: normal;
