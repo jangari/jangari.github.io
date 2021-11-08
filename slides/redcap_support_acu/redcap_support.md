@@ -115,31 +115,3 @@ Aidan.Wilson@intersect.org.au
 @aidan.wilson
 
 Notes: So that's it from me. Reach out to me via email if you like, or in the community.
-
----
-
-Here's a bit of code:
-
-```json [2|3|4|5-9]
-{
-    "name": "HIDESUBMIT Action Tags",
-    "namespace": "INTERSECT\\HideSubmit",
-    "description": "Allows users to conditionally hide various Submit/Save/Next instance buttons on surveys and/or data entry forms using Action Tags and branching logic.",
-    "permissions": [
-        "redcap_survey_page_top",
-        "redcap_data_entry_form_top",
-        "redcap_every_page_before_render"
-    ],
-    "framework-version": 6,
-    "authors": [
-        {
-            "name": "Aidan Wilson",
-            "email": "aidan.wilson@intersect.org.au",
-            "institution": "Intersect Australia"
-        }
-    ],
-    "compatibility": {
-        "redcap-version-min": "10.4.1"
-    }
-}
-```
