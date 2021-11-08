@@ -36,7 +36,7 @@
     const params = new URLSearchParams(window.location.search);
     if (params.has('course')){
         var course = params.get('course');
-        var course_intro_path = "../course_intro/" + course + ".html";
+        var course_intro_path = "course_intro/" + course + ".html";
         document.getElementById("course_intro").setAttribute("data-markdown",course_intro_path);
         document.title = courses[course] + " – A course by Intersect";
         };
