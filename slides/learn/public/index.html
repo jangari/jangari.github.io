@@ -6,12 +6,12 @@
 
 		<title>Intersect Training</title>
 
-		<link rel="stylesheet" href="../../dist/reset.css">
-		<link rel="stylesheet" href="../../dist/reveal.css">
+		<link rel="stylesheet" href="../../reveal.js/dist/reset.css">
+		<link rel="stylesheet" href="../../reveal.js/dist/reveal.css">
 	
         <link rel="stylesheet" href="../../dist/theme/intersect_dark.css" id="theme">
 		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="../../plugin/highlight/gruvbox-dark.css">
+		<link rel="stylesheet" href="../plugin/highlight/gruvbox-dark.css">
         
 	</head>
 	<body>
@@ -22,12 +22,12 @@
 			</div>
 		</div>
 
-		<script src="../../dist/reveal.js"></script>
-		<script src="../../plugin/notes/notes.js"></script>
-		<script src="../../plugin/markdown/markdown.js"></script>
-		<script src="../../plugin/highlight/highlight.js"></script>
+		<script src="../../reveal.js/dist/reveal.js"></script>
+		<script src="../../reveal.js/plugin/notes/notes.js"></script>
+		<script src="../../reveal.js/plugin/markdown/markdown.js"></script>
+		<script src="../../reveal.js/plugin/highlight/highlight.js"></script>
         <script src="../../plugin/menu/menu.js"></script>
-		<script src="../../plugin/zoom/zoom.js"></script>
+		<script src="../../reveal.js/plugin/zoom/zoom.js"></script>
 
     <script type="text/javascript">
     // Load in various slide resources
@@ -38,7 +38,7 @@
     const params = new URLSearchParams(window.location.search);
     if (params.has('course')){
         var course = params.get('course');
-        var course_intro_path = "../../course_intro/" + course + ".html";
+        var course_intro_path = "../course_intro/" + course + ".html";
         document.getElementById("course_intro").setAttribute("data-markdown",course_intro_path);
         document.title = courses[course] + " – A course by Intersect";
         };
