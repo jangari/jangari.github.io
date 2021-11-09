@@ -25,6 +25,8 @@
                 </section>
                 <section data-auto-animate id="uni_intro">
                 </section>
+                <section id="carst">
+                </section>
                 <section id="course_intro">
                 </section>
                 <section id="coda" data-markdown="intersect_common/intersect_closing.html">
@@ -65,6 +67,7 @@
     if (params.has('course')){
         var course = params.get('course').toLowerCase();
         if (course in courses){
+            var courseFound = true;
             var course_title_path = "course_title/" + course + ".html";
             document.getElementById("course_title").setAttribute("data-markdown",course_title_path);
             var course_intro_path = "course_intro/" + course + ".html";
@@ -77,12 +80,19 @@
         var uni_intro_path = "uni_intro/" + uni + ".html";
         if (uni in unis){
             document.getElementById("uni_intro").setAttribute("data-markdown",uni_intro_path);
+            if (uni === "uoa" && courseFound){
+                var carst_path = "carst/" + course + ".html";
+                document.getElementById("carst").setAttribute("data-markdown",carst_path);
+            } else {
+                document.getElementById("carst").setAttribute("data-visibility","hidden");
+            };
         } else {
+            // If uni in query string parameter is not in the array
             document.getElementById("uni_intro").setAttribute("data-visibility","hidden");
-        }
+        };
     } else {
-// if no uni query string parameter
-            document.getElementById("uni_intro").setAttribute("data-visibility","hidden");
+        // if no uni query string parameter
+        document.getElementById("uni_intro").setAttribute("data-visibility","hidden");
     };
     }
     loadResources();
