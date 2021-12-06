@@ -26,11 +26,11 @@
 		<script src="../reveal.js/plugin/markdown/markdown.js"></script>
 		<script src="../reveal.js/plugin/highlight/highlight.js"></script>
 		<script src="../reveal.js/plugin/zoom/zoom.js"></script>
+		<script src="./resources.js"></script>
 
     <script type="text/javascript">
     // Load in various slide resources
-    function loadResources(){
-    const courses = {"excel101": "Excel for Researchers",
+    const courses_legacy = {"excel101": "Excel for Researchers",
                     "redcap101": "Data Entry and Surveys with REDCap",
                     "r101": "Learn to Program: R"};
     const params = new URLSearchParams(window.location.search);
@@ -38,10 +38,8 @@
         var course = params.get('course');
         var course_intro_path = "course_intro/" + course + ".html";
         document.getElementById("course_intro").setAttribute("data-markdown",course_intro_path);
-        document.title = courses[course] + " – A course by Intersect";
+        document.title = courses[course].name + " – A course by Intersect";
         };
-    };
-    loadResources();
     // More info about initialization & config:
     // - https://revealjs.com/initialization/
     // - https://revealjs.com/config/
