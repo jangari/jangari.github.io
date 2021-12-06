@@ -122,11 +122,18 @@
 if (uni === "uoa" && courseFound){ document.getElementById("carst_code").style.visibility = "visible"; }; 
 if (landingPage){
 var uni_sel = document.getElementById("uni_sel")
+var course_sel = document.getElementById("course_sel")
 for (let uni in unis) {
         var opt = document.createElement('option');
-        opt.innerHTML = uni.name;
+        opt.innerHTML = unis[uni].name;
         opt.value = uni;
         uni_sel.appendChild(opt);
+    }
+for (let course in courses) {
+        var opt = document.createElement('option');
+        opt.innerHTML = courses[course].name;
+        opt.value = course;
+        course_sel.appendChild(opt);
     }
 }
     });
