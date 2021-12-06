@@ -1,0 +1,21 @@
+const unis = []
+unis['une'] =  {status: "full", name: "University of New England", era: ["peta"]}
+unis['uts'] =  {status: "full", name: "University of Technology, Sydney", era: ["weisi"]}
+unis['usyd'] =  {status: "none", name: "The University of Sydney"}
+unis['unsw'] =  {status: "full", name: "University of New South Wales", era: ["abdullah"]}
+unis['acu'] =  {status: "full", name: "Australian Catholic University", era: ["aidan"]}
+unis['scu'] =  {status: "aff", name: "Southern Cross University"}
+unis['uon'] =  {status: "none", name: "University of Newcastle"}
+unis['uc'] =  {status: "full", name: "University of Canberra", era: ["kyle"]}
+unis['deakin'] =  {status: "full", name: "Deakin University", era: ["andrew", "jerry"]}
+unis['csu'] =  {status: "aff", name: "Charles Sturt University"}
+unis['ltu'] =  {status: "full", name: "La Trobe University", era: ["sam"]}
+unis['wsu'] =  {status: "full", name: "Western Sydney University", era: ["xingyong"]}
+unis['uoa'] =  {status: "full", name: "University of Adelaide", era: ["marium"]}
+unis['open'] =  {status: "full", name: "Intersect Australia"}
+unis['nci'] =  {status: "full", name: "NCI", era: ["jianzhou"]}
+
+const courses = []
+courses["excel101"] = {name: "Excel for Researchers", carst_code: "123abc"}
+courses["redcap101"] = {name: "Data Capture and Surveys with REDCap"}
+courses["r101"] = {name: "Learn to Program: R"}

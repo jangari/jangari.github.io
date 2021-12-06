@@ -40,12 +40,13 @@
 		<script src="../reveal.js/plugin/highlight/highlight.js"></script>
 		<script src="../reveal.js/plugin/zoom/zoom.js"></script>
         <script src="../plugin/menu/menu.js"></script>
+        <script src="./resources.js"></script>
 
     <script type="text/javascript">
-    const courses = {"excel101": "Excel for Researchers",
+    const courses_legacy = {"excel101": "Excel for Researchers",
         "redcap101": "Data Capture and Surveys with REDCap",
         "r101": "Learn to Program: R"};
-    const unis =    
+    const unis_legacy =    
         {"une": "University of New England",
             "uts": "University of Technology, Sydney",
             "usyd": "The University of Sydney",
@@ -63,6 +64,7 @@
             "nci": "NCI"};
 
     const params = new URLSearchParams(window.location.search);
+    var landingPage = false;
     if (params.has('course')){
         var course = params.get('course').toLowerCase();
         if (course in courses){
@@ -72,8 +74,8 @@
             var course_intro_path = "course_intro/" + course + ".html";
             document.getElementById("course_intro").setAttribute("data-markdown",course_intro_path);
             document.title = courses[course] + " – A course by Intersect";
-        } else {}; // Course does not exist
-    } else {}; // No course paramter; load start page.
+        } else {landingPage = true}; // Course does not exist
+    } else {landingPage = true}; // No course paramter; load start page.
     if (params.has('uni')){
         var uni = params.get('uni').toLowerCase();
         var uni_intro_path = "uni_intro/" + uni + ".html";
@@ -118,6 +120,15 @@
         }
     }).then( () => {
 if (uni === "uoa" && courseFound){ document.getElementById("carst_code").style.visibility = "visible"; }; 
+if (landingPage){
+var uni_sel = document.getElementById("uni_sel")
+for (let uni in unis) {
+        var opt = document.createElement('option');
+        opt.innerHTML = uni.name;
+        opt.value = uni;
+        uni_sel.appendChild(opt);
+    }
+}
     });
 </script>
 </body>
