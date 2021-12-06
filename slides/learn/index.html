@@ -118,7 +118,9 @@
         }
     });
 // If Adelaide, then unhide the Carst code element on course intro snippet.
+window.onload = (event) => {
 if (uni === "uoa" && courseFound){ document.getElementById("carst_code").setAttribute("visibility","visible");};
+};
 </script>
 </body>
 </html>
