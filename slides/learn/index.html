@@ -42,26 +42,26 @@
         <script src="../plugin/menu/menu.js"></script>
 
     <script type="text/javascript">
-    function loadResources(){
+function loadResources(){
     const courses = {"excel101": "Excel for Researchers",
-                    "redcap101": "Data Capture and Surveys with REDCap",
-                    "r101": "Learn to Program: R"};
+        "redcap101": "Data Capture and Surveys with REDCap",
+        "r101": "Learn to Program: R"};
     const unis =    
         {"une": "University of New England",
-        "uts": "University of Technology, Sydney",
-        "usyd": "The University of Sydney",
-        "unsw": "University of New South Wales",
-        "acu": "Australian Catholic University",
-        "scu": "Southern Cross University",
-        "uon": "University of Newcastle",
-        "uc": "University of Canberra",
-        "deakin": "Deakin University",
-        "csu": "Charles Sturt University",
-        "ltu": "La Trobe University",
-        "wsu": "Western Sydney University",
-        "uoa": "University of Adelaide",
-        "open": "Intersect Australia",
-        "nci": "NCI"};
+            "uts": "University of Technology, Sydney",
+            "usyd": "The University of Sydney",
+            "unsw": "University of New South Wales",
+            "acu": "Australian Catholic University",
+            "scu": "Southern Cross University",
+            "uon": "University of Newcastle",
+            "uc": "University of Canberra",
+            "deakin": "Deakin University",
+            "csu": "Charles Sturt University",
+            "ltu": "La Trobe University",
+            "wsu": "Western Sydney University",
+            "uoa": "University of Adelaide",
+            "open": "Intersect Australia",
+            "nci": "NCI"};
 
     const params = new URLSearchParams(window.location.search);
     if (params.has('course')){
@@ -122,6 +122,8 @@
             transitions: true
         }
     });
+// If Adelaide, then unhide the Carst code element on course intro snippet.
+if (uni === "uoa" && courseFound){ document.getElementById("carst_code").style.visibility = "visible"; }; 
 </script>
 </body>
 </html>
