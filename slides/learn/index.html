@@ -117,8 +117,10 @@
             transitions: true
         }
     });
+</script>
+<script type="module">
 // If Adelaide, then unhide the Carst code element on course intro snippet.
-setTimeout(function() {if (uni === "uoa" && courseFound){ document.getElementById("carst_code").setAttribute("visibility","visible");}}, 1000);
+if (uni === "uoa" && courseFound){ document.getElementById("carst_code").style.visibility = "visible"; }; 
 </script>
 </body>
 </html>
