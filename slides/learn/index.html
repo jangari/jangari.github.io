@@ -73,7 +73,7 @@
             document.getElementById("course_title").setAttribute("data-markdown",course_title_path);
             var course_intro_path = "course_intro/" + course + ".html";
             document.getElementById("course_intro").setAttribute("data-markdown",course_intro_path);
-            document.title = courses[course].title + " – A course by Intersect";
+            document.title = courses[course].name + " – A course by Intersect";
         } else {landingPage = true}; // Course does not exist
     } else {landingPage = true}; // No course paramter; load start page.
     if (params.has('uni')){
