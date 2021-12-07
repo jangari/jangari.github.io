@@ -19,3 +19,4 @@ const courses = []
 courses["excel101"] = {name: "Excel for Researchers", carst_code: "123abc"}
 courses["redcap101"] = {name: "Data Capture and Surveys with REDCap"}
 courses["r101"] = {name: "Learn to Program: R"}
+courses["python101"] = {name: "Learn to Program: Python"}
