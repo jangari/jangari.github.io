@@ -1,3 +1,4 @@
+<!-- The first slide (section) of a uni intro component should feature the eRA, with the data-auto-animate attribute on the slide and the eRA name as the id on the image. This will mean the profile photo will auto-animate from the intersect intro component. -->
 <section data-auto-animate>
 <h2>Aidan Wilson</h2>
 <table>
@@ -14,5 +15,39 @@
 </table>
 </section>
 <section>
-    <p>Hello</p>
+<!-- This is a regular slide (in a section tag). You can mix markdown and html within these section tags. Slide notes can be added using the <aside class="notes"> tag. These are visible to the presenter when you press S in a presentation. -->
+<h2>eResearch at ACU</h2>
+- Provide technology services to researchers
+- Advice on appropriate tool
+- Advice on complying with Ethics
+- Data management advice
+- REDCap and Qualtrics support
+- Training
+<aside class="notes">At ACU, the eResearch team provide researchers with a range of services, including advice and consulting on the use of technology, complying with Ethics and data management, advice on using tools like REDCap and Qualtrics, and of course, training.</aside>
+</section>
+<section data-background-iframe="https://research.acu.edu.au/" data-background-interactive nologo data-preload>
+    <!-- This section has a full-sized interactive website as its background. The attributes data-background-interactive make it interactive (omit if you just want to show the page), and data-preload ensures it's ready when you get there.  -->
+</section>
+<section>
+    <!-- This section contains a webpage rendered inside an iframe. You can set the width and height of the iframe with the attributes. The data-preload attribute ensures it's ready when you get there. An iframe is best if you want to have a title and any other content on the slide. -->
+    ## REDCap Guidelines
+    <iframe width="800" height="500" data-src="https://rdcap.acu.edu.au/guidelines/#user-training-and-support" data-preload></iframe>
+</section>
+<section>
+<!-- In a slide, any old markdown will do. --> 
+## Hacky Hour
+Hacky Hour brings together researchers to socialise, and perhaps help one another with problems they've been having.
+- Last Thursday of every month
+- Online via Zoom
+- [inter.fyi/acu/hackyhour](https://inter.fyi/acu/hackyhour)
+</section>
+<section>
+<!-- You can also apply fragments, so that text elements pop up sequentially. You need to use html to do this. -->
+## Hacky Hour
+Hacky Hour brings together researchers to socialise, and perhaps help one another with problems they've been having.
+<ul>
+    <li class="fragment">Last Thursday of every month</li>
+    <li class="fragment">Online via Zoom</li>
+    <li class="fragment">[inter.fyi/acu/hackyhour](https://inter.fyi/acu/hackyhour)</li>
+</ul>
 </section>
