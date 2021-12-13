@@ -25,8 +25,6 @@
                 </section>
                 <section data-auto-animate id="uni_intro">
                 </section>
-                <section id="carst">
-                </section>
                 <section id="course_intro">
                 </section>
                 <section id="coda" data-markdown="intersect_common/intersect_closing.html">
@@ -43,26 +41,6 @@
         <script src="./resources.js"></script>
 
     <script type="text/javascript">
-    const courses_legacy = {"excel101": "Excel for Researchers",
-        "redcap101": "Data Capture and Surveys with REDCap",
-        "r101": "Learn to Program: R"};
-    const unis_legacy =    
-        {"une": "University of New England",
-            "uts": "University of Technology, Sydney",
-            "usyd": "The University of Sydney",
-            "unsw": "University of New South Wales",
-            "acu": "Australian Catholic University",
-            "scu": "Southern Cross University",
-            "uon": "University of Newcastle",
-            "uc": "University of Canberra",
-            "deakin": "Deakin University",
-            "csu": "Charles Sturt University",
-            "ltu": "La Trobe University",
-            "wsu": "Western Sydney University",
-            "uoa": "University of Adelaide",
-            "open": "Intersect Australia",
-            "nci": "NCI"};
-
     const params = new URLSearchParams(window.location.search);
     var landingPage = false;
     if (params.has('course')){
@@ -76,17 +54,18 @@
             document.title = courses[course].name + " – A course by Intersect";
         } else {landingPage = true}; // Course does not exist
     } else {landingPage = true}; // No course paramter; load start page.
+    if (landingPage){
+                document.getElementById('acknowledgement_of_country').setAttribute("data-visibility","hidden");
+                document.getElementById('intersect_intro').setAttribute("data-visibility","hidden");
+                document.getElementById('uni_intro').setAttribute("data-visibility","hidden");
+                document.getElementById('course_intro').setAttribute("data-visibility","hidden");
+                document.getElementById('coda').setAttribute("data-visibility","hidden");
+            }
     if (params.has('uni')){
         var uni = params.get('uni').toLowerCase();
         var uni_intro_path = "uni_intro/" + uni + ".html";
         if (uni in unis){
             document.getElementById("uni_intro").setAttribute("data-markdown",uni_intro_path);
-            if (uni === "uoa" && courseFound){
-                var carst_path = "carst/" + course + ".html";
-                document.getElementById("carst").setAttribute("data-markdown",carst_path);
-            } else {
-                document.getElementById("carst").setAttribute("data-visibility","hidden");
-            };
         } else {
             // If uni in query string parameter is not in the array
             document.getElementById("uni_intro").setAttribute("data-visibility","hidden");
