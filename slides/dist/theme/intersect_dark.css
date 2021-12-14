@@ -3,7 +3,7 @@
  * Author: Achim Staebler
  */
 /* @import url(./fonts/operator-mono/operator-mono.css); */
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Source+Code+Pro:ital,wght@0,400;0,600;1,400;1,600&display=swap&family=Lato:400,700,400italic,700italic');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:400,600|Source+Code+Pro:ital,400,600|Lato:400,700,400italic,700italic&display=swap');
 html * {
   color-profile: sRGB;
   rendering-intent: auto;
@@ -40,7 +40,7 @@ html * {
 }
 
 .reveal-viewport {
-  background: #1d2021;
+  background: :#1d2021;
   background-color: var(--r-background-color);
   background-image: url(intersect_rev.png);
   background-repeat: no-repeat;
@@ -48,7 +48,7 @@ html * {
   background-size: 10%;
 }
 
-.reveal .nologo {
+.reveal-viewport .nologo {
     background-image: none;
 }
 
