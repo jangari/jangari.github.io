@@ -3,7 +3,7 @@
  * Author: Achim Staebler
  */
 /* @import url(./fonts/operator-mono/operator-mono.css); */
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:400,600|Source+Code+Pro:ital,400,600|Lato:400,700,400italic,700italic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Fira+Mono:wght@400;500&family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Source+Code+Pro:ital,wght@0,400;0,600;1,400;1,600&display=swap');
 html * {
   color-profile: sRGB;
   rendering-intent: auto;
