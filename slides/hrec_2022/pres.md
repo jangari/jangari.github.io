@@ -25,12 +25,11 @@ Notes: I'll talk about what I mean by third party, because it can mean different
 "A third person or organization less directly involved in a matter than the main people or organizations that are involved" - Cambridge Dictionary
 
 "Third party is also used to refer to outsourcing certain functions to an outside company to ensure efficient service for clients." - Investopedia
+{: .fragment}
 
 Notes: Third party obviously has a legal definition, which is this definition from Cambridge, but the specific meaning I'm using is this one by Investopedia. So the first two parties are ACU as a whole, and the researcher. Third party services therefore refers to any service that is utilised by the researcher but which is not provided by the university.
 
 +++
-
-## Third Party
 
 ### Storage:
 
@@ -43,8 +42,6 @@ Notes: Third party obviously has a legal definition, which is this definition fr
 
 +++
 
-## Third Party
-
 ### Data Collection
 
 |Not Third Party | Third Party |
@@ -54,9 +51,7 @@ Notes: Third party obviously has a legal definition, which is this definition fr
 | |LimeSurvey|
 | |Google Forms|
 
-+++ 
-
-## Third Party
++++
 
 ### Recording
 
