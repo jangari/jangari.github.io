@@ -171,6 +171,8 @@ If you're a staff member, then your cloud-recorded Zoom meetings are automatical
 If you're a student though, you don't have access to automatic transcription of your zoom meetings as a result of the fact that Cloud recordings are saved to CloudStor instead of to Zoom's public cloud. So with the additional security of being able to store cloud recordings on CloudStor, students lose the option to automatically transcribe their recordings.
 Teams recordings are not automatically transcribed, but when a user is sent the link to the recording, they can click a button to have the audio transcribed by Microsoft's systems. It takes a little while to process, but once done, the time-coded transcript can be used to index through the file to go to exact points. I can't find any information about where the data goes in order to be transcribed though, so we don't know if Microsoft is using their own systems, or another third-party, and we don't know where the data is sent.
 
++++ 
+
 ## Transcription
 
 Other options:
@@ -190,15 +192,15 @@ The last option I'll cover here is to use Microsoft Word online (this doesn't wo
 
 ---
 
-## Preview: Data Classification
+## Data Classification
 
 | Platform | Highly Sensitive | Sensitive | Private | Public |
 |---|---|---|---|---|
-| Shared Drives | ✅ | ✅ | ✅ | ✅ |
+| Network | ✅ | ✅ | ✅ | ✅ |
 | OneDrive | ❌ | ✅ | ✅ | ✅ |
 | CloudStor | ❌ | ✅ | ✅ | ✅ |
-| Local Computer | ❌ | ❌† | ✅ | ✅ |
-| Dropbox, Google Drive, etc. | ❌ | ❌ | ❌|✅|
+| Computer | ❌ | ❌ | ✅ | ✅ |
+| Dropbox | ❌ | ❌ | ❌|✅|
 
 Notes: Just to let you know that we in eResearch are working on clarifying some of these issues so that researchers and HREC can make more informed decisions about various kinds of data. 
 One such piece of work is to define a research data classification, a document that describes different kinds of data and how sensitive they are based on whether it is identifiable or not, whether it contains medical or health information, and what groups of people are represented in the data.
