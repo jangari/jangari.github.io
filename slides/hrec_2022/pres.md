@@ -35,7 +35,7 @@ Notes: Third party obviously has a legal definition, which is this definition fr
 
 ### Storage:
 
-|Not Third Party | Third Party |
+|Local | Third Party |
 |---|---|
 |Network Drives|CloudStor |
 | |OneDrive|
@@ -48,7 +48,7 @@ Notes: The fact that I have put some university approved services in the Third P
 
 ### Data Collection
 
-|Not Third Party | Third Party |
+|Local | Third Party |
 |---|---|
 |REDCap|Qualtrics |
 | |Survey Monkey|
@@ -59,9 +59,9 @@ Notes: The fact that I have put some university approved services in the Third P
 
 ### Recording interviews
 
-|Not Third Party | Third Party |
+|Local | Third Party |
 |---|---|
-| |Zoom |
+|Local device |Zoom |
 | |Teams|
 | |Google Meet|
 | |Mobile apps|
@@ -113,16 +113,20 @@ The biggest problem with CloudStor though, is that they have as recently as two 
 - Not suitable for long-term storage<!-- .element: class="fragment" -->
 
 Notes: In more recent years, we have begun recommending Microsoft OneDrive for storing research data, even sensitive data. We are not alone here; many other universities, including UNSW, Deakin, La Trobe and Sydney, are in the process of recommending OneDrive over all other options, and for all data classifications.
+
 As a service it is very similar to CloudStor; individuals get 1TB of space that they can use, adequate for 90% of researchers, but whether larger volumes is possible with OneDrive I am unsure about.
+
 It is provided by Microsoft to us as part of our subscription to Office365.
+
 But there is a definite cloud, pardon the pun, over OneDrive as it is not suitable for long term storage. The reason for this is that OneDrive is tied to your Microsoft account. If that account ceases to exist, say, if you are an HDR student and you graduate, or if you are a staff researcher and you leave the university, your OneDrive data is deleted after a period that is determined by the tenant, in our case, by IT. I don't know what this period is for us, but it can only be between 30 days and 3650 days, so, one month to ten years, and that retention period cannot be differentially applied to research data or other kinds of data.
+
 So we in eResearch are quite happy for people to use OneDrive for active data storage, but we have to begin putting pressure on researchers to clean up their data upon completion of their projects and put things in the right places, such as our digital repository, ResearchBank, though it is not capable of storing large volumes of data..
 
 ---
 
 ## Recording interviews
 
-| :Zoom account type: | :Recording storage†: |
+| Zoom account type | Recording storage† |
 |---|---|
 | Licensed | Zoom's public server (US? China?) |
 | On-Prem | CloudStor |
@@ -135,12 +139,13 @@ Notes: I'll leave the can of worms that is data storage and talk a little about 
 
 ## Recording interviews: Zoom
 
-| :ACU user type: | :Zoom license: |
+| ACU user type | Zoom license |
 |---|---|
 | Staff | Licensed |
 | Student | On-Prem |
 
 Notes: So what kind of accounts do we have at ACU? Well, it depends, unfortunately, on whether you're staff or a student. Students are on-prem, meaning their recordings go to CloudStor, whereas staff are licensed, meaning their recordings go to Zoom's public cloud, wherever that is.
+
 As a result we advised all users to only record Zoom meetings to their local computer, and then save them in CloudStor, OneDrive, or the network shares when the file is ready.
 
 +++
@@ -152,7 +157,9 @@ As a result we advised all users to only record Zoom meetings to their local com
 - No capacity for recording to local storage
 
 Notes: When it comes to Teams, there are other things to be aware of. First of all, there is currently a hard separation between the student myacu domain and the staff acu domain for Microsoft services including Teams. This is being addressed, finally, but it means that Teams meetings set up by staff can present difficulties for students in accessing them, and vice versa.
+
 Notwithstanding that, the recording aspect of Teams is a little cleaner. Recordings are saved to the user's OneDrive, and can be shared with others using the built-in OneDrive sharing features.
+
 Teams doesn't have any option to record locally though, so if a researcher uses Teams for recording participant interviews, then that data is being stored on OneDrive, which may not always be ideal depending on the interviewees, the content, and so on.
 
 ---
@@ -165,13 +172,18 @@ Teams doesn't have any option to record locally though, so if a researcher uses 
 | Zoom (On-prem) | No |
 | Teams | Yes, via Microsoft? |
 
+
 Notes: In almost all cases, researchers will want to transcribe their interviews, whether they've recorded them using Zoom, Teams, some other third-party app on their computer or mobile device, or a physical audio/video recording device.
+
 Both Zoom and Teams offer built-in options for both closed captioning and automated transcripts, but, as you've probably guessed, it's complicated.
+
 If you're a staff member, then your cloud-recorded Zoom meetings are automatically transcribed, and those transcripts can be downloaded from your Zoom account online. This is convenient, but the downside is that the service that performs the transcription is yet another third-party service called Otter.ai. This may be acceptable, but it puts additional pressure on the researcher, eResearch of the HREC to consider the terms of this third-party service.
+
 If you're a student though, you don't have access to automatic transcription of your zoom meetings as a result of the fact that Cloud recordings are saved to CloudStor instead of to Zoom's public cloud. So with the additional security of being able to store cloud recordings on CloudStor, students lose the option to automatically transcribe their recordings.
+
 Teams recordings are not automatically transcribed, but when a user is sent the link to the recording, they can click a button to have the audio transcribed by Microsoft's systems. It takes a little while to process, but once done, the time-coded transcript can be used to index through the file to go to exact points. I can't find any information about where the data goes in order to be transcribed though, so we don't know if Microsoft is using their own systems, or another third-party, and we don't know where the data is sent.
 
-+++ 
++++
 
 ## Transcription
 
@@ -181,8 +193,9 @@ Other options:
 - Use Microsoft Online to upload a file to transcribe it into the Word document
 - 
 Notes: There are other ways to transcribe recordings.
-You can take advantage of whatever Microsoft is doing, and upload a video file to OneDrive, go to play it, and click 'generate transcript'. This is probably the best option because the transcript is time-coded and able to be downloaded as a .vtt file, which is a text based format that can be used, probably, in a variety of platforms (though, regrettably, NVivo does not seem to understand this format).
+
 Another option, a safer one, is to use your computer's dictation feature that comes built in on recent versions of Mac and Windows computers. I tried this with my Mac, and even with no internet connection, the dictation feature worked well. I would advise this for transcribing sensitive material as you can be assured that the data is not leaving the computer. You can't, as far as I can tell, transcribe a file using this method, but you can listen to the file in your earphones and repeat it into the dictate function. This is a great method if your audio is perhaps not very clear, in which case automatic transcription wouldn't do so well, whereas you can repeat unclear sections into the dictate feature more clearly.
+
 The last option I'll cover here is to use Microsoft Word online (this doesn't work using the local application), and select 'transcribe' under the 'dictate' options, and upload a file. The advantage of this is that Microsoft Word separates the transcript into different speakers, but it cannot be downloaded as a .vtt file, it can only be pasted into the Word document.
 
 ---
@@ -203,7 +216,10 @@ The last option I'll cover here is to use Microsoft Word online (this doesn't wo
 | Dropbox | ❌ | ❌ | ❌|✅|
 
 Notes: Just to let you know that we in eResearch are working on clarifying some of these issues so that researchers and HREC can make more informed decisions about various kinds of data. 
+
 One such piece of work is to define a research data classification, a document that describes different kinds of data and how sensitive they are based on whether it is identifiable or not, whether it contains medical or health information, and what groups of people are represented in the data.
+
 We will also provide guidance on the sorts of platforms may be used to store data of different classifications.
+
 Knowing what we do about third party services like Zoom and Teams when it comes to recording meetings and transcribing them, this kind of documentation will hopefully make decision-making in this area much simpler, and hopefully will allow researchers to choose the right platform or method, rather than be directed by the Research Office.
 
