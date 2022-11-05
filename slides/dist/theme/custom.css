@@ -1,0 +1,17 @@
+/* This file contains some custom CSS rules that should apply across all themes. */
+
+/*******************************************
+ * WATERMARK
+ *******************************************/
+
+.watermark {
+    position: fixed;
+    font-size: 4em;
+    rotate: -30deg;
+    top: 40%;
+    left: 25%;
+    opacity: 0.4;
+    z-index: 0;
+    color: white;
+}
+
