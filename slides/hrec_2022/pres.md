@@ -70,12 +70,14 @@ Notes: The fact that I have put some university approved services in the Third P
 
 ## What's the problem?
 
-- Little or no control over the data by ACU/Researcher
-- Third-party dictates terms
-- Service can change/cease without warning
+- Little or no control over the data by ACU/Researcher<!-- .element: class="fragment" -->
+- Third-party dictates terms<!-- .element: class="fragment" -->
+- Service can change/cease without warning<!-- .element: class="fragment" -->
 
 Notes: The problem with using any third party service is that the university, and the researcher, cannot control what happens with that data, and usually what happens to it is hard to determine, even if you read the terms of service. 
+
 There is risk with any third party service that the information you provide is no longer controlled by you or the university. This risk might be low, but the impact could be huge in the case of research data, so it is important for researchers to understand what's happening with their data.
+
 There is an additional risk that some service that researchers have come to rely on changes without notice, or even ceases completely, leaving researchers stuck without a service, and the university caught in a tough position of having to find something to bridge the gap.
 
 ---
@@ -87,8 +89,27 @@ There is an additional risk that some service that researchers have come to rely
 - OneDrive (Microsoft)<!-- .element: class="fragment" -->
 
 Notes: Data storage is currently a bit of an issue at ACU. We're in the process of starting conversations around data storage with IT, but in a nutshell, the university right now cannot provide adequate storage infrastructure for projects that aim to capture a lot of data. With that in mind, the solution provided by the university is the local network drive system, shared drives, Isilon, Cohesity, whatever name you know it as. These are the drives that present to you as the R drive or the H drive on your computer.
+
 There are two supported third party storage platforms that we use here, and they are CloudStor, operated by AARNet, the non-profit organisation that provides internet to Australian research institutions,
+
 and OneDrive, operated by Microsoft as a huge, public, commercial cloud offering that we get as part of our subscription to things like Office365.
+
++++
+
+### Network Shares
+
+- Limited space<!-- .element: class="fragment" -->
+- Cannot be shared outside the university<!-- .element: class="fragment" -->
+- Must be connected to VPN while off campus<!-- .element: class="fragment" -->
+- Access control complex; request to IT<!-- .element: class="fragment" -->
+
+Notes: The only 'local' option among data storage platforms is the network shared drives, these are the R: drive or H: drive or whatever.
+
+Unfortunately the whole system is under a bit of strain at the moment and there's not a lot of space left. So requesting a large amount of space is likely to be refused. 
+
+Network shares are only available to ACU users, and only while on campus or on the VPN, so this option is not particularly useful for collaborating with colleagues outside the university.
+
+They're not particularly convenient for researchers to set up or use, and the fact that they use the organisation structure to assign shares, it can lead to cases in which some people have access to research data when they shouldn't. Access controls are handled via requests to IT, which brings a certain amount of administrative overhead, again limiting their use in this regard.
 
 +++
 
@@ -100,7 +121,9 @@ and OneDrive, operated by Microsoft as a huge, public, commercial cloud offering
 - Shuttering in December 2023<!-- .element: class="fragment" -->
 
 Notes: The university has never really provided much in terms of research data storage, and as a result we have, for some years now, been recommending people to use CloudStor as a stop-gap measure, since every account is allocated 1TB for no additional cost to the university, and with the potential to allocate higher volumes up to a total quota of 10TB that we get from AARNet for free.
+
 CloudStor is provided to ACU as part of ACU's subscription to AARNet services, which are mainly things like IT network solutions, and access to the non-public, AARNet network.
+
 The biggest problem with CloudStor though, is that they have as recently as two weeks ago announced that they are closing the service and deleting data in December 2023. This is certainly going to cause numerous headaches in the new year, and one solution, as problematic as it is, might be to ask researchers to move all their active data storage to:
 
 +++
@@ -118,7 +141,7 @@ As a service it is very similar to CloudStor; individuals get 1TB of space that 
 
 It is provided by Microsoft to us as part of our subscription to Office365.
 
-But there is a definite cloud, pardon the pun, over OneDrive as it is not suitable for long term storage. The reason for this is that OneDrive is tied to your Microsoft account. If that account ceases to exist, say, if you are an HDR student and you graduate, or if you are a staff researcher and you leave the university, your OneDrive data is deleted after a period that is determined by the tenant, in our case, by IT. I don't know what this period is for us, but it can only be between 30 days and 3650 days, so, one month to ten years, and that retention period cannot be differentially applied to research data or other kinds of data.
+But there is a definite cloud over OneDrive as it is not suitable for long term storage. The reason for this is that OneDrive is tied to your Microsoft account. If that account ceases to exist, say, if you are an HDR student and you graduate, or if you are a staff researcher and you leave the university, your OneDrive data is deleted after a period that is determined by the tenant, in our case, by IT. I don't know what this period is for us, but it can only be between 30 days and 3650 days, so, one month to ten years, and that retention period cannot be differentially applied to research data or other kinds of data.
 
 So we in eResearch are quite happy for people to use OneDrive for active data storage, but we have to begin putting pressure on researchers to clean up their data upon completion of their projects and put things in the right places, such as our digital repository, ResearchBank, though it is not capable of storing large volumes of data..
 
@@ -126,18 +149,16 @@ So we in eResearch are quite happy for people to use OneDrive for active data st
 
 ## Recording interviews
 
-| Zoom account type | Recording storage† |
+| Account type | Recording storage |
 |---|---|
-| Licensed | Zoom's public server (US? China?) |
+| Licensed | Zoom's public servers |
 | On-Prem | CloudStor |
-
-†When selecting 'Record to the cloud' instead of 'Record to local file'.
 
 Notes: I'll leave the can of worms that is data storage and talk a little about recordings. It is a common use case here, particularly since COVID, that researchers will conduct interviews with research participants via phone or video meeting, and of course they will want to record those interviews so they can, for example, transcribe them and import the transcript into NVivo. When we in the eResearch team started getting queries from researchers about whether they could record in Zoom, we did some analysis, and found that:
 
 +++
 
-## Recording interviews: Zoom
+### Recording interviews: Zoom
 
 | ACU user type | Zoom license |
 |---|---|
@@ -150,7 +171,7 @@ As a result we advised all users to only record Zoom meetings to their local com
 
 +++
 
-## Recording interviews: Teams
+### Recording interviews: Teams
 
 - Domain separation between staff and students
 - Recordings go to OneDrive in all cases
@@ -191,8 +212,10 @@ Other options:
 - Use OneDrive to transcribe files (video only)
 - Use local computer's dictate feature to transcribe (Safest)
 - Use Microsoft Online to upload a file to transcribe it into the Word document
-- 
+
 Notes: There are other ways to transcribe recordings.
+
+You can take advantage of whatever Microsoft is doing, and upload a video file to OneDrive, go to play it, and click 'generate transcript'. This is probably the best option because the transcript is time-coded and able to be downloaded as a .vtt file, which is a text based format that can be used, probably, in a variety of platforms (though, regrettably, NVivo does not seem to understand this format).
 
 Another option, a safer one, is to use your computer's dictation feature that comes built in on recent versions of Mac and Windows computers. I tried this with my Mac, and even with no internet connection, the dictation feature worked well. I would advise this for transcribing sensitive material as you can be assured that the data is not leaving the computer. You can't, as far as I can tell, transcribe a file using this method, but you can listen to the file in your earphones and repeat it into the dictate function. This is a great method if your audio is perhaps not very clear, in which case automatic transcription wouldn't do so well, whereas you can repeat unclear sections into the dictate feature more clearly.
 
