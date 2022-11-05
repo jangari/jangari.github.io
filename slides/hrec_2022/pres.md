@@ -12,7 +12,7 @@ Notes: I'm Aidan and I'm the Digital Research Analyst here at ACU, which means t
 - What is 'third party'?
 - What's the problem?
 - Data Storage
-- Recordings
+- Recording interviews
 - Transcriptions
 - General Guidelines
 
@@ -54,7 +54,7 @@ Notes: The fact that I have put some university approved services in the Third P
 
 +++
 
-### Recording
+### Recording interviews
 
 |Not Third Party | Third Party |
 |---|---|
@@ -67,7 +67,9 @@ Notes: The fact that I have put some university approved services in the Third P
 
 ## What's the problem?
 
-
+- Little or no control over the data by ACU/Researcher
+- Third-party dictates terms
+- Service can change/cease without warning
 
 Notes: The problem with using any third party service is that the university, and the researcher, cannot control what happens with that data, and usually what happens to it is hard to determine, even if you read the terms of service. 
 There is risk with any third party service that the information you provide is no longer controlled by you or the university. This risk might be low, but the impact could be huge in the case of research data, so it is important for researchers to understand what's happening with their data.
@@ -115,17 +117,92 @@ So we in eResearch are quite happy for people to use OneDrive for active data st
 
 ---
 
-## Recordings
+## Recording interviews
 
-Notes: I'll leave the can of worms that is data storage and talk a little about recordings. It is a common use case here, particularly since COVID, that researchers will conduct interviews with research participants via phone or video meeting, and of course they will want to record those interviews so they can, for example, transcribe them and import the transcript into NVivo. After some 
+| :Zoom account type: | :Recording storage†: |
+|---|---|
+| Licensed | Zoom's public server (US? China?) |
+| On-Prem | CloudStor |
+
+†When selecting 'Record to the cloud' instead of 'Record to local file'.
+
+Notes: I'll leave the can of worms that is data storage and talk a little about recordings. It is a common use case here, particularly since COVID, that researchers will conduct interviews with research participants via phone or video meeting, and of course they will want to record those interviews so they can, for example, transcribe them and import the transcript into NVivo. When we in the eResearch team started getting queries from researchers about whether they could record in Zoom, we did some analysis, and found that:
+
++++
+
+## Recording interviews: Zoom
+
+| :ACU user type: | :Zoom license: |
+|---|---|
+| Staff | Licensed |
+| Student | On-Prem |
+
+Notes: So what kind of accounts do we have at ACU? Well, it depends, unfortunately, on whether you're staff or a student. Students are on-prem, meaning their recordings go to CloudStor, whereas staff are licensed, meaning their recordings go to Zoom's public cloud, wherever that is.
+As a result we advised all users to only record Zoom meetings to their local computer, and then save them in CloudStor, OneDrive, or the network shares when the file is ready.
+
++++
+
+## Recording interviews: Teams
+
+- Domain separation between staff and students
+- Recordings go to OneDrive in all cases
+- No capacity for recording to local storage
+
+Notes: When it comes to Teams, there are other things to be aware of. First of all, there is currently a hard separation between the student myacu domain and the staff acu domain for Microsoft services including Teams. This is being addressed, finally, but it means that Teams meetings set up by staff can present difficulties for students in accessing them, and vice versa.
+Notwithstanding that, the recording aspect of Teams is a little cleaner. Recordings are saved to the user's OneDrive, and can be shared with others using the built-in OneDrive sharing features.
+Teams doesn't have any option to record locally though, so if a researcher uses Teams for recording participant interviews, then that data is being stored on OneDrive, which may not always be ideal depending on the interviewees, the content, and so on.
 
 ---
 
 ## Transcriptions
+
+| Platform and license | Transcription |
+|---|---|
+| Zoom (Licensed) | Yes, via Otter.ai |
+| Zoom (On-prem) | No |
+| Teams | Yes, via Microsoft? |
+
+Notes: In almost all cases, researchers will want to transcribe their interviews, whether they've recorded them using Zoom, Teams, some other third-party app on their computer or mobile device, or a physical audio/video recording device.
+Both Zoom and Teams offer built-in options for both closed captioning and automated transcripts, but, as you've probably guessed, it's complicated.
+If you're a staff member, then your cloud-recorded Zoom meetings are automatically transcribed, and those transcripts can be downloaded from your Zoom account online. This is convenient, but the downside is that the service that performs the transcription is yet another third-party service called Otter.ai. This may be acceptable, but it puts additional pressure on the researcher, eResearch of the HREC to consider the terms of this third-party service.
+If you're a student though, you don't have access to automatic transcription of your zoom meetings as a result of the fact that Cloud recordings are saved to CloudStor instead of to Zoom's public cloud. So with the additional security of being able to store cloud recordings on CloudStor, students lose the option to automatically transcribe their recordings.
+Teams recordings are not automatically transcribed, but when a user is sent the link to the recording, they can click a button to have the audio transcribed by Microsoft's systems. It takes a little while to process, but once done, the time-coded transcript can be used to index through the file to go to exact points. I can't find any information about where the data goes in order to be transcribed though, so we don't know if Microsoft is using their own systems, or another third-party, and we don't know where the data is sent.
+
+## Transcription
+
+Other options:
+- Use OneDrive to transcribe files (video only)
+- Use local computer's dictate feature to transcribe (Safest)
+- Use Microsoft Online to upload a file to transcribe it into the Word document
+- 
+Notes: There are other ways to transcribe recordings.
+You can take advantage of whatever Microsoft is doing, and upload a video file to OneDrive, go to play it, and click 'generate transcript'. This is probably the best option because the transcript is time-coded and able to be downloaded as a .vtt file, which is a text based format that can be used, probably, in a variety of platforms (though, regrettably, NVivo does not seem to understand this format).
+Another option, a safer one, is to use your computer's dictation feature that comes built in on recent versions of Mac and Windows computers. I tried this with my Mac, and even with no internet connection, the dictation feature worked well. I would advise this for transcribing sensitive material as you can be assured that the data is not leaving the computer. You can't, as far as I can tell, transcribe a file using this method, but you can listen to the file in your earphones and repeat it into the dictate function. This is a great method if your audio is perhaps not very clear, in which case automatic transcription wouldn't do so well, whereas you can repeat unclear sections into the dictate feature more clearly.
+The last option I'll cover here is to use Microsoft Word online (this doesn't work using the local application), and select 'transcribe' under the 'dictate' options, and upload a file. The advantage of this is that Microsoft Word separates the transcript into different speakers, but it cannot be downloaded as a .vtt file, it can only be pasted into the Word document.
 
 ---
 
 ## General Guidelines
 
 
+---
+
+## Preview: Data Classification
+
+| Storage service | 3: Highly Sensitive | 2: Sensitive | 1: Private | 0: Public |
+|---|---|---|---|---|
+| Network Drives (S: drive, etc.) | ✅ | ✅ | ✅ | ✅ |
+| CloudStor FileSender (for transfer) | ✅ | ✅ | ✅ | ✅ |
+| REDCap (for collection) | ✅ | ✅ | ✅ | ✅ |
+| REDCap SendIt (for transfer) | ✅ | ✅ | ✅ | ✅ |
+| OneDrive (ACU account) | ❌ | ✅ | ✅ | ✅ |
+| CloudStor (ACU account) | ❌ | ✅ | ✅ | ✅ |
+| Local Computer | ❌ | ❌† | ✅ | ✅ |
+| USB/removable media | ❌ | ❌ | ✅ | ✅ |
+| Public cloud services (Dropbox, Google Drive, OneDrive with personal account) | ❌ | ❌ | ❌|✅|
+
+Notes: Just to let you know that we in eResearch are working on clarifying some of these issues so that researchers and HREC can make more informed decisions about various kinds of data. 
+One such piece of work is to define a research data classification, a document that describes different kinds of data and how sensitive they are based on whether it is identifiable or not, whether it contains medical or health information, and what groups of people are represented in the data.
+We will also provide guidance on the sorts of platforms may be used to store data of different classifications.
+Knowing what we do about third party services like Zoom and Teams when it comes to recording meetings and transcribing them, this kind of documentation will hopefully make decision-making in this area much simpler, and hopefully will allow researchers to choose the right platform or method, rather than be directed by the Research Office.
 
