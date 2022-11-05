@@ -1,7 +1,10 @@
-# Data Storage Implications for Third Party Services
+## Data Storage Implications for Third Party Services
 
 Aidan Wilson
+
 Aidan.Wilson@acu.edu.au
+
+Human Research Ethics Committee Retreat 2022
 
 Notes: I'm Aidan and I'm the Digital Research Analyst here at ACU, which means that I work between ORS and IT, helping them understand each other, and I also work with researchers when they need help or support with technology. Data storage is something I help out with quite a lot, and we in the eResearch team offer advice to researchers when they need to store data in particular places, encouraging them to use more university-standardised locations and services where appropriate, or thinking through some edge cases, such as when those researchers are collaborating with others outside the university. So it is in that context that I'm going to talk about data storage implications for third party services, and I'll speak specifically about Zoom, because it's a bit complicated here, but the general principles can apply to other sorts of services.
 
@@ -189,17 +192,13 @@ The last option I'll cover here is to use Microsoft Word online (this doesn't wo
 
 ## Preview: Data Classification
 
-| Storage service | 3: Highly Sensitive | 2: Sensitive | 1: Private | 0: Public |
+| Platform | Highly Sensitive | Sensitive | Private | Public |
 |---|---|---|---|---|
-| Network Drives (S: drive, etc.) | ✅ | ✅ | ✅ | ✅ |
-| CloudStor FileSender (for transfer) | ✅ | ✅ | ✅ | ✅ |
-| REDCap (for collection) | ✅ | ✅ | ✅ | ✅ |
-| REDCap SendIt (for transfer) | ✅ | ✅ | ✅ | ✅ |
-| OneDrive (ACU account) | ❌ | ✅ | ✅ | ✅ |
-| CloudStor (ACU account) | ❌ | ✅ | ✅ | ✅ |
+| Shared Drives | ✅ | ✅ | ✅ | ✅ |
+| OneDrive | ❌ | ✅ | ✅ | ✅ |
+| CloudStor | ❌ | ✅ | ✅ | ✅ |
 | Local Computer | ❌ | ❌† | ✅ | ✅ |
-| USB/removable media | ❌ | ❌ | ✅ | ✅ |
-| Public cloud services (Dropbox, Google Drive, OneDrive with personal account) | ❌ | ❌ | ❌|✅|
+| Dropbox, Google Drive, etc. | ❌ | ❌ | ❌|✅|
 
 Notes: Just to let you know that we in eResearch are working on clarifying some of these issues so that researchers and HREC can make more informed decisions about various kinds of data. 
 One such piece of work is to define a research data classification, a document that describes different kinds of data and how sensitive they are based on whether it is identifiable or not, whether it contains medical or health information, and what groups of people are represented in the data.
