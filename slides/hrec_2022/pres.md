@@ -31,8 +31,8 @@ Notes: I'll talk about what I mean by third party, because it can mean different
 Notes: Third party obviously has a legal definition, which is this definition from Cambridge, but the specific meaning I'm using is this one by Investopedia. So the first two parties are ACU as a whole, and the researcher. Third party services therefore refers to any service that is utilised by the researcher but which is not provided by the university.
 
 +++
-<!-- .slide: data-auto-animate -->
-### Storage:
+
+### Storage
 
 |Local | Third Party |
 |---|---|
@@ -45,7 +45,6 @@ Notes: The fact that I have put some university approved services in the Third P
 
 +++
 
-<!-- .slide: data-auto-animate -->
 ### Data Collection
 
 |Local | Third Party |
@@ -57,7 +56,6 @@ Notes: The fact that I have put some university approved services in the Third P
 
 +++
 
-<!-- .slide: data-auto-animate -->
 ### Recording interviews
 
 |Local | Third Party |
@@ -226,7 +224,7 @@ The last option I'll cover here is to use Microsoft Word online (this doesn't wo
 
 ## Data Classification
 
-DRAFT<!-- .element: class="watermark" --><!-- .element: style="color:red;" -->
+DRAFT<!-- .element: class="watermark" -->
 
 | Platform | Highly Sensitive | Sensitive | Private | Public |
 |---|:-:|:-:|:-:|:-:|
