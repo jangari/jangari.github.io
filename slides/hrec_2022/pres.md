@@ -16,8 +16,7 @@ Notes: I'm Aidan and I'm the Digital Research Analyst here at ACU, which means t
 - What's the problem?
 - Data Storage
 - Recording interviews
-- Transcriptions
-- General Guidelines
+- Transcription
 
 Notes: I'll talk about what I mean by third party, because it can mean different things to different people. Then I'll raise the main problem that we're trying to solve here, before I go into some areas that are impacted by this, namely, storage of data, of recordings, and transcriptions, both of which are related. Finally I'll raise some general guidelines.
 
@@ -185,7 +184,7 @@ Teams doesn't have any option to record locally though, so if a researcher uses 
 
 ---
 
-## Transcriptions
+## Transcription
 
 | Platform and license | Transcription |
 |---|---|
@@ -223,21 +222,9 @@ The last option I'll cover here is to use Microsoft Word online (this doesn't wo
 
 ---
 
-## General Guidelines
-
-
----
-
 ## Data Classification
 
-DRAFT<!-- .element: class="watermark" style="position:fixed;
- font-size: 2em;
- rotate: -30deg;
- bottom: 50%;
- right:50%;
- opacity:0.6;
- z-index:99;
- color:white;" -->
+DRAFT<!-- .element: class="watermark" --><!-- .element: style="color:red;" -->
 
 | Platform | Highly Sensitive | Sensitive | Private | Public |
 |---|:-:|:-:|:-:|:-:|
