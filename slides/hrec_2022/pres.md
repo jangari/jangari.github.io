@@ -230,6 +230,15 @@ The last option I'll cover here is to use Microsoft Word online (this doesn't wo
 
 ## Data Classification
 
+DRAFT<!-- .element: class="watermark" style="position:fixed;
+ font-size: 2em;
+ rotate: -30deg;
+ bottom: 50%;
+ right:50%;
+ opacity:0.6;
+ z-index:99;
+ color:white;" -->
+
 | Platform | Highly Sensitive | Sensitive | Private | Public |
 |---|---|---|---|---|
 | Network | ✅ | ✅ | ✅ | ✅ |
