@@ -40,6 +40,10 @@ html * {
 .reveal-viewport {
   background: #1d2021;
   background-color: var(--r-background-color);
+  background-image: url(/profile_200.png);
+  background-repeat: no-repeat;
+  background-position: 2% 2%;
+  background-size: 10%;
 }
 
 .reveal {
