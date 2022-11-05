@@ -14,12 +14,12 @@ html * {
  *********************************************/
 :root {
   --r-background-color: #3c1053;
-  --r-main-font: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  --r-main-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
   --r-main-font-size: 40px;
   --r-main-color: #fff;
   --r-block-margin: 20px;
   --r-heading-margin: 0 0 20px 0;
-  --r-heading-font: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  --r-heading-font: Georgia, "Helvetica Neue", Helvetica, Arial, sans-serif;
   --r-heading-color: #fff;
   --r-heading-line-height: 1.2;
   --r-heading-letter-spacing: normal;
