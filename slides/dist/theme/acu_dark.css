@@ -255,6 +255,7 @@ html * {
 
 .reveal table th {
   font-weight: bold;
+  font-family: var(--r-heading-font);
 }
 
 .reveal table th,
