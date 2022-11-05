@@ -240,7 +240,7 @@ DRAFT<!-- .element: class="watermark" style="position:fixed;
  color:white;" -->
 
 | Platform | Highly Sensitive | Sensitive | Private | Public |
-|---|---|---|---|---|
+|---|:-:|:-:|:-:|:-:|
 | Network | ✅ | ✅ | ✅ | ✅ |
 | OneDrive | ❌ | ✅ | ✅ | ✅ |
 | CloudStor | ❌ | ✅ | ✅ | ✅ |
