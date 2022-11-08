@@ -199,26 +199,39 @@ Both Zoom and Teams offer built-in options for both closed captioning and automa
 
 If you're a staff member, then your cloud-recorded Zoom meetings are automatically transcribed, and those transcripts can be downloaded from your Zoom account online. This is convenient, but the downside is that the service that performs the transcription is yet another third-party service called Otter.ai. This may be acceptable, but it puts additional pressure on the researcher, eResearch of the HREC to consider the terms of this third-party service.
 
-If you're a student though, you don't have access to automatic transcription of your zoom meetings as a result of the fact that Cloud recordings are saved to CloudStor instead of to Zoom's public cloud. So with the additional security of being able to store cloud recordings on CloudStor, students lose the option to automatically transcribe their recordings.
+If you're a student though, you don't have access to automatic transcription of your zoom meetings as a result of the fact that Cloud recordings are saved to CloudStor instead of to Zoom's public cloud, and CloudStor does not make them available to Otter.ai. So with the additional security of being able to store cloud recordings on CloudStor, students lose the option to automatically transcribe their recordings.
 
-Teams recordings are not automatically transcribed, but when a user is sent the link to the recording, they can click a button to have the audio transcribed by Microsoft's systems. It takes a little while to process, but once done, the time-coded transcript can be used to index through the file to go to exact points. I can't find any information about where the data goes in order to be transcribed though, so we don't know if Microsoft is using their own systems, or another third-party, and we don't know where the data is sent.
+Teams recordings are not automatically transcribed, but when a user is sent the link to the recording, they can click a button to have the audio transcribed by Microsoft's systems. It takes a little while to process, but once done, the time-coded transcript can be used to index through the file to go to exact points. I can't find any information about where the data goes in order to be transcribed though, so we don't know if Microsoft is using their own systems, or another third-party, and we don't know where the data is sent, or whether it is accessed by a human, perhaps to continue to train the AI algorithm that does most of the transcription.
+
+Something else I should mention here is that you may have experienced live captioning in Teams meetings, which, when enabled, also automatically generates a transcript. But in researching this for this talk, I found that the option is now disabled in Teams, which I believe is a 'tenant administrator' setting, that is, someone at ACU decided to not allow automated closed captioning and transcription. This represents a bit of a pitfall of third party services, or in this case, our own organisations decisions around the use of that service, it can change any time.
 
 +++
 
 ## Transcription
 
-Other options:
-- Use OneDrive to transcribe files (video only)
-- Use local computer's dictate feature to transcribe (Safest)
-- Use Microsoft Online to upload a file to transcribe it into the Word document
+#### Other options
 
-Notes: There are other ways to transcribe recordings.
+- Use OneDrive to transcribe files (video only)<!-- .element: class="fragment" -->
+- Use local computer's dictate feature to transcribe (Safest)<!-- .element: class="fragment" -->
+- Use Microsoft Online to upload a file to transcribe it into the Word document<!-- .element: class="fragment" -->
+
+Notes: There are, luckily, other ways to transcribe recordings. I receive disproportionately many questions about transcription so it's only fitting I give some workarounds.
 
 You can take advantage of whatever Microsoft is doing, and upload a video file to OneDrive, go to play it, and click 'generate transcript'. This is probably the best option because the transcript is time-coded and able to be downloaded as a .vtt file, which is a text based format that can be used, probably, in a variety of platforms (though, regrettably, NVivo does not seem to understand this format).
 
 Another option, a safer one, is to use your computer's dictation feature that comes built in on recent versions of Mac and Windows computers. I tried this with my Mac, and even with no internet connection, the dictation feature worked well. I would advise this for transcribing sensitive material as you can be assured that the data is not leaving the computer. You can't, as far as I can tell, transcribe a file using this method, but you can listen to the file in your earphones and repeat it into the dictate function. This is a great method if your audio is perhaps not very clear, in which case automatic transcription wouldn't do so well, whereas you can repeat unclear sections into the dictate feature more clearly.
 
 The last option I'll cover here is to use Microsoft Word online (this doesn't work using the local application), and select 'transcribe' under the 'dictate' options, and upload a file. The advantage of this is that Microsoft Word separates the transcript into different speakers, but it cannot be downloaded as a .vtt file, it can only be pasted into the Word document.
+
+---
+
+## So what do we do?
+
+Notes: What I have outlined are just some of the issues that researchers, the research office, and the HREC have to deal when it comes to storing data and using these third-party services. And unfortunately there are no clear, easy answers to all of this. It's a bit of a mess depending on whether you're a student, staff, whether your data is sensitive or not, and whether you need to collaborate outside the university.
+
+Without guidance, users have to be responsible for reading the terms of service for third party services and also read between the lines to determine the best place to store data, or whether some service they are using is risky for their data. Then, depending on the importance and sensitivity of their data, that risk may be unacceptable. 
+
+It's a lot for a poor researcher to take on themselves.
 
 ---
 
