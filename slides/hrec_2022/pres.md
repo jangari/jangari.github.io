@@ -257,13 +257,13 @@ It's a lot for a poor researcher to take on themselves.
 
 DRAFT<!-- .element: class="watermark" -->
 
-| Platform | Highly Sensitive | Sensitive | Private | Public |
+| Platform | Highly Sensitive | Sensitive | Private | Public |<!-- .element: class="fragment" -->
 |---|:-:|:-:|:-:|:-:|
 | Network | ✅ | ✅ | ✅ | ✅ |
 | OneDrive | ❌ | ✅ | ✅ | ✅ |
 | CloudStor | ❌ | ✅ | ✅ | ✅ |
 | Computer | ❌ | ❌ | ✅ | ✅ |
-| Dropbox | ❌ | ❌ | ❌|✅|<!-- .element: class="fragment" -->
+| Dropbox | ❌ | ❌ | ❌|✅|
 
 Notes: Just to let you know that we in eResearch are working on clarifying some of these issues so that researchers and HREC can make more informed decisions about various kinds of data. 
 
