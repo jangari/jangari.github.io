@@ -314,23 +314,13 @@ Knowing what we do about third party services like Zoom and Teams when it comes 
 
 ---
 
-## Data Classification
+## In closing
 
-DRAFT<!-- .element: class="watermark" -->
+- Few 'local' options for storage, recording, transcription<!-- .element: class="fragment" -->
+- Third party platforms used more and more<!-- .element: class="fragment" -->
+- Decisions about platforms then depend on these platforms<!-- .element: class="fragment" -->
+- Data classification may assist here<!-- .element: class="fragment" -->
 
-| Platform | Highly Sensitive | Sensitive | Private | Public |
-|---|:-:|:-:|:-:|:-:|
-| Network | ✅ | ✅ | ✅ | ✅ |
-| OneDrive | ❌ | ✅ | ✅ | ✅ |
-| CloudStor | ❌ | ✅ | ✅ | ✅ |
-| Computer | ❌ | ❌ | ✅ | ✅ |
-| Dropbox | ❌ | ❌ | ❌|✅|
+Notes: In the absence of locally provided platforms that are appropriate for the collection, generation and storage of data, for the recording of interviews and the transcription of recordings, researchers will necessarily use third party platforms. Our job is to help them make the right decisions based on their requirements, and the terms of service of those platforms.
 
-Notes: Just to let you know that we in eResearch are working on clarifying some of these issues so that researchers and HREC can make more informed decisions about various kinds of data. 
-
-One such piece of work is to define a research data classification, a document that describes different kinds of data and how sensitive they are based on whether it is identifiable or not, whether it contains medical or health information, and what groups of people are represented in the data.
-
-We will also provide guidance on the sorts of platforms may be used to store data of different classifications.
-
-Knowing what we do about third party services like Zoom and Teams when it comes to recording meetings and transcribing them, this kind of documentation will hopefully make decision-making in this area much simpler, and hopefully will allow researchers to choose the right platform or method, rather than be directed by the Research Office.
-
+A data classification may assist here, in allowing researchers to determine the level of sensitivity of their datasets, and thus choose a platform or a service that suits.
