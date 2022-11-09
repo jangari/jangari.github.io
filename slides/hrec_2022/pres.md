@@ -257,13 +257,52 @@ It's a lot for a poor researcher to take on themselves.
 
 DRAFT<!-- .element: class="watermark" -->
 
-| Platform | Highly Sensitive | Sensitive | Private | Public |
-|---|:-:|:-:|:-:|:-:|
-| Network | ✅ | ✅ | ✅ | ✅ |
-| OneDrive | ❌ | ✅ | ✅ | ✅ |
-| CloudStor | ❌ | ✅ | ✅ | ✅ |
-| Computer | ❌ | ❌ | ✅ | ✅ |
-| Dropbox | ❌ | ❌ | ❌|✅|
+<table class="fragment">
+<thead>
+<tr>
+<th>Platform</th>
+<th align="center">Highly Sensitive</th>
+<th align="center">Sensitive</th>
+<th align="center">Private</th>
+<th align="center">Public</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Network</td>
+<td align="center">✅</td>
+<td align="center">✅</td>
+<td align="center">✅</td>
+<td align="center">✅</td>
+</tr>
+<tr>
+<td>OneDrive</td>
+<td align="center">❌</td>
+<td align="center">✅</td>
+<td align="center">✅</td>
+<td align="center">✅</td>
+</tr>
+<tr>
+<td>CloudStor</td>
+<td align="center">❌</td>
+<td align="center">✅</td>
+<td align="center">✅</td>
+<td align="center">✅</td>
+</tr>
+<tr>
+<td>Computer</td>
+<td align="center">❌</td>
+<td align="center">❌</td>
+<td align="center">✅</td>
+<td align="center">✅</td>
+</tr>
+<tr>
+<td>Dropbox</td>
+<td align="center">❌</td>
+<td align="center">❌</td>
+<td align="center">❌</td>
+<td align="center">✅</td>
+</tr>
+</tbody></table>
 
 Notes: Just to let you know that we in eResearch are working on clarifying some of these issues so that researchers and HREC can make more informed decisions about various kinds of data. 
 
