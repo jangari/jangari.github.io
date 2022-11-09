@@ -16,9 +16,9 @@ Notes: I'm Aidan and I'm the Digital Research Analyst here at ACU, which means t
 - What's the problem?
 - Data Storage
 - Recording interviews
-- Transcription
+- Transcribing Recording
 
-Notes: I'll talk about what I mean by third party, because it can mean different things to different people. Then I'll raise the main problem that we're trying to solve here, before I go into some areas that are impacted by this, namely, storage of data, of recordings, and transcriptions, both of which are related. Finally I'll raise some general guidelines.
+Notes: I'll talk about what I mean by third party, because it can mean different things to different people. Then I'll raise the main problem that we're trying to solve here, before I go into some areas that are impacted by this, namely, storage of data, of recordings, and transcriptions, both of which are related. Finally I'll raise some general guidelines, and hopefully talk about some things on the horizon which may make all this a bit more clear in future.
 
 ---
 
@@ -30,29 +30,20 @@ Notes: I'll talk about what I mean by third party, because it can mean different
 
 Notes: Third party obviously has a legal definition, which is this definition from Cambridge, but the specific meaning I'm using is this one by Investopedia. So the first two parties are ACU as a whole, and the researcher. Third party services therefore refers to any service that is utilised by the researcher but which is not provided by the university.
 
+I'll go through some examples of third-party and, for want of a better term, local solutions for data storage, recording interviews, and transcribing recordings. This might represent a common workflow here in which researchers might conduct interviews with research participants, transcribe them, and then store those transcripts somewhere to be analysed in a tool like NVivo.
+
 +++
 
-### Storage
+### Data Storage
 
 |Local | Third Party |
 |---|---|
 |Network Drives|CloudStor |
 | |OneDrive|
 | |Dropbox|
-| |Google Drive|
+| |Google Drive|<!-- .element: class="fragment" -->
 
 Notes: The fact that I have put some university approved services in the Third Party column, including CloudStor and OneDrive, when some might see these as being provided by the university. On a strict definition though, even though ACU may pay AARNet or Microsoft for their services, you could argue they are third party because they are not managed by the university. Perhaps there's cause for a third column here.
-
-+++
-
-### Data Collection
-
-|Local | Third Party |
-|---|---|
-|REDCap|Qualtrics |
-| |Survey Monkey|
-| |LimeSurvey|
-| |Google Forms|
 
 +++
 
@@ -63,7 +54,22 @@ Notes: The fact that I have put some university approved services in the Third P
 |Local device |Zoom |
 | |Teams|
 | |Google Meet|
-| |Mobile apps|
+| |Mobile apps|<!-- .element: class="fragment" -->
+
+Notes: When it comes to recording interviews, there really aren't any locally provided applications, but a researcher could use a physical recording device, like a dictaphone, and that, I think counts as 'local'. Among third party tools for this, there is Zoom and Teams, both of which allow users to record, and then there are other platforms out there like Google Meet, and possibly some mobile apps that, unlike local devices, may store recordings online rather than locally.
+
++++
+
+### Transcribing recordings
+
+|Local | Third Party |
+|---|---|
+|Local computer |Zoom |
+| |Teams|
+| |Microsoft Word online|
+| |Mobile apps|<!-- .element: class="fragment" -->
+
+Notes: Of course once you have a recording you'll want to transcribe it. Again, unless the researcher buys software to use on their computer locally, there aren't really any local options. But all of the aforementioned online meeting platforms provide transcription services of sorts.
 
 ---
 
@@ -73,11 +79,11 @@ Notes: The fact that I have put some university approved services in the Third P
 - Third-party dictates terms<!-- .element: class="fragment" -->
 - Service can change/cease without warning<!-- .element: class="fragment" -->
 
-Notes: The problem with using any third party service is that the university, and the researcher, cannot control what happens with that data, and usually what happens to it is hard to determine, even if you read the terms of service. 
+Notes: There is risk with any third party service that the information you provide is no longer controlled by you or the university. This risk might be low, but the impact could be huge in the case of research data, so it is important for researchers to understand what's happening with their data.
 
-There is risk with any third party service that the information you provide is no longer controlled by you or the university. This risk might be low, but the impact could be huge in the case of research data, so it is important for researchers to understand what's happening with their data.
+All of these services require you to read and accept the terms of service, but of course no one does. And those terms are dictated by the service provider, meaning an ACU researcher cannot opt out of something like their data being used for 'quality assurance' purposes.
 
-There is an additional risk that some service that researchers have come to rely on changes without notice, or even ceases completely, leaving researchers stuck without a service, and the university caught in a tough position of having to find something to bridge the gap.
+There is an additional risk that services that researchers have come to rely on can change without notice, or even cease completely, leaving researchers stuck without a service, and the university caught in a tough position of having to find something to bridge the gap. I'm foreshadowing something here.
 
 ---
 
@@ -87,7 +93,7 @@ There is an additional risk that some service that researchers have come to rely
 - CloudStor (AARNet)<!-- .element: class="fragment" -->
 - OneDrive (Microsoft)<!-- .element: class="fragment" -->
 
-Notes: Data storage is currently a bit of an issue at ACU. We're in the process of starting conversations around data storage with IT, but in a nutshell, the university right now cannot provide adequate storage infrastructure for projects that aim to capture a lot of data. With that in mind, the solution provided by the university is the local network drive system, shared drives, Isilon, Cohesity, whatever name you know it as. These are the drives that present to you as the R drive or the H drive on your computer.
+Notes: Data storage is currently a bit of an issue at ACU. We're in conversation around data storage with IT right now, but in a nutshell, the university cannot provide adequate storage infrastructure for projects that aim to capture a lot of data. With that caveat, the solution provided by the university is the local network drive system, shared drives, Isilon, Cohesity, whatever name you know it as. These are the drives that present to you as the R drive or the H drive on your computer.
 
 There are two supported third party storage platforms that we use here, and they are CloudStor, operated by AARNet, the non-profit organisation that provides internet to Australian research institutions,
 
@@ -97,18 +103,21 @@ and OneDrive, operated by Microsoft as a huge, public, commercial cloud offering
 
 ### Network Shares
 
+- Quite secure<!-- .element: class="fragment" -->
 - Limited space<!-- .element: class="fragment" -->
 - Cannot be shared outside the university<!-- .element: class="fragment" -->
 - Must be connected to VPN while off campus<!-- .element: class="fragment" -->
 - Access control complex; request to IT<!-- .element: class="fragment" -->
 
-Notes: The only 'local' option among data storage platforms is the network shared drives, these are the R: drive or H: drive or whatever.
+Notes: When it comes to the network shares, these are still the most secure data storage option available.
 
-Unfortunately the whole system is under a bit of strain at the moment and there's not a lot of space left. So requesting a large amount of space is likely to be refused. 
+But we're told there's not a lot of space left. So requesting a large amount of space is likely to be refused. 
 
 Network shares are only available to ACU users, and only while on campus or on the VPN, so this option is not particularly useful for collaborating with colleagues outside the university.
 
 They're not particularly convenient for researchers to set up or use, and the fact that they use the organisation structure to assign shares, it can lead to cases in which some people have access to research data when they shouldn't. Access controls are handled via requests to IT, which brings a certain amount of administrative overhead, again limiting their use in this regard.
+
+It is for these reasons that, for several years now, we have been advising researchers to use:
 
 +++
 
@@ -119,7 +128,7 @@ They're not particularly convenient for researchers to set up or use, and the fa
 - Provided through subscription to AARNet services<!-- .element: class="fragment" -->
 - Shuttering in December 2023<!-- .element: class="fragment" -->
 
-Notes: The university has never really provided much in terms of research data storage, and as a result we have, for some years now, been recommending people to use CloudStor as a stop-gap measure, since every account is allocated 1TB for no additional cost to the university, and with the potential to allocate higher volumes up to a total quota of 10TB that we get from AARNet for free.
+Notes: CloudStor as a stop-gap measure, since every account is allocated 1TB for no additional cost to the university, and with the potential to allocate higher volumes up to a total quota of 10TB that we get from AARNet for free.
 
 CloudStor is provided to ACU as part of ACU's subscription to AARNet services, which are mainly things like IT network solutions, and access to the non-public, AARNet network.
 
@@ -148,12 +157,21 @@ So we in eResearch are quite happy for people to use OneDrive for active data st
 
 ## Recording interviews
 
+
+Notes: I'll leave the can of worms that is data storage and talk about recordings.
+
++++
+
+### Recording interviews: Zoom
+
 | Account type | Recording storage |
 |---|---|
 | Licensed | Zoom's public servers |
-| On-Prem | CloudStor |
+| On-Prem | CloudStor |<!-- .element: class="fragment" -->
 
-Notes: I'll leave the can of worms that is data storage and talk a little about recordings. It is a common use case here, particularly since COVID, that researchers will conduct interviews with research participants via phone or video meeting, and of course they will want to record those interviews so they can, for example, transcribe them and import the transcript into NVivo. When we in the eResearch team started getting queries from researchers about whether they could record in Zoom, we did some analysis, and found that:
+Notes: When we in the eResearch team started getting queries from researchers about whether they could record in Zoom, we did some analysis to find out where the data was stored, and found that it depended on your license. If you are of a 'licensed' type, then when you select 'record to the cloud', then that cloud is Zoom's public servers, and we don't know where that is.
+
+However if you are 'on-prem', then the cloud to which cloud recordings are sent, is CloudStor.
 
 +++
 
@@ -162,19 +180,19 @@ Notes: I'll leave the can of worms that is data storage and talk a little about 
 | ACU user type | Zoom license |
 |---|---|
 | Staff | Licensed |
-| Student | On-Prem |
+| Student | On-Prem |<!-- .element: class="fragment" -->
 
-Notes: So what kind of accounts do we have at ACU? Well, it depends, unfortunately, on whether you're staff or a student. Students are on-prem, meaning their recordings go to CloudStor, whereas staff are licensed, meaning their recordings go to Zoom's public cloud, wherever that is.
+Notes: So what kind of accounts do we have at ACU? Well, it depends, unfortunately, on whether you're staff or a student. Students are on-prem, meaning their recordings go to CloudStor, whereas staff are licensed, meaning their recordings go to Zoom's own servers.
 
-As a result we advised all users to only record Zoom meetings to their local computer, and then save them in CloudStor, OneDrive, or the network shares when the file is ready.
+As a result, and for simplicity, we advise all users to only record Zoom meetings to their local computer, and then save them in CloudStor, OneDrive, or the network shares when the file is ready.
 
 +++
 
 ### Recording interviews: Teams
 
-- Domain separation between staff and students
-- Recordings go to OneDrive in all cases
-- No capacity for recording to local storage
+- Domain separation between staff and students<!-- .element: class="fragment" -->
+- Recordings go to OneDrive in all cases<!-- .element: class="fragment" -->
+- No capacity for recording to local storage<!-- .element: class="fragment" -->
 
 Notes: When it comes to Teams, there are other things to be aware of. First of all, there is currently a hard separation between the student myacu domain and the staff acu domain for Microsoft services including Teams. This is being addressed, finally, but it means that Teams meetings set up by staff can present difficulties for students in accessing them, and vice versa.
 
@@ -190,7 +208,7 @@ Teams doesn't have any option to record locally though, so if a researcher uses 
 |---|---|
 | Zoom (Licensed) | Yes, via Otter.ai |
 | Zoom (On-prem) | No |
-| Teams | Yes, via Microsoft? |
+| Teams | Yes, via Microsoft? |<!-- .element: class="fragment" -->
 
 
 Notes: In almost all cases, researchers will want to transcribe their interviews, whether they've recorded them using Zoom, Teams, some other third-party app on their computer or mobile device, or a physical audio/video recording device.
@@ -245,7 +263,7 @@ DRAFT<!-- .element: class="watermark" -->
 | OneDrive | ❌ | ✅ | ✅ | ✅ |
 | CloudStor | ❌ | ✅ | ✅ | ✅ |
 | Computer | ❌ | ❌ | ✅ | ✅ |
-| Dropbox | ❌ | ❌ | ❌|✅|
+| Dropbox | ❌ | ❌ | ❌|✅|<!-- .element: class="fragment" -->
 
 Notes: Just to let you know that we in eResearch are working on clarifying some of these issues so that researchers and HREC can make more informed decisions about various kinds of data. 
 
