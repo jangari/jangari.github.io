@@ -257,7 +257,29 @@ It's a lot for a poor researcher to take on themselves.
 
 DRAFT<!-- .element: class="watermark" -->
 
-| Platform | Highly Sensitive | Sensitive | Private | Public |<!-- .element: class="fragment" -->
+| Platform | Highly Sensitive | Sensitive | Private | Public |
+|---|:-:|:-:|:-:|:-:|
+| Network | ✅ | ✅ | ✅ | ✅ |
+| OneDrive | ❌ | ✅ | ✅ | ✅ |
+| CloudStor | ❌ | ✅ | ✅ | ✅ |
+| Computer | ❌ | ❌ | ✅ | ✅ |
+| Dropbox | ❌ | ❌ | ❌|✅|
+
+Notes: Just to let you know that we in eResearch are working on clarifying some of these issues so that researchers and HREC can make more informed decisions about various kinds of data. 
+
+One such piece of work is to define a research data classification, a document that describes different kinds of data and how sensitive they are based on whether it is identifiable or not, whether it contains medical or health information, and what groups of people are represented in the data.
+
+We will also provide guidance on the sorts of platforms may be used to store data of different classifications.
+
+Knowing what we do about third party services like Zoom and Teams when it comes to recording meetings and transcribing them, this kind of documentation will hopefully make decision-making in this area much simpler, and hopefully will allow researchers to choose the right platform or method, rather than be directed by the Research Office.
+
+---
+
+## Data Classification
+
+DRAFT<!-- .element: class="watermark" -->
+
+| Platform | Highly Sensitive | Sensitive | Private | Public |
 |---|:-:|:-:|:-:|:-:|
 | Network | ✅ | ✅ | ✅ | ✅ |
 | OneDrive | ❌ | ✅ | ✅ | ✅ |
