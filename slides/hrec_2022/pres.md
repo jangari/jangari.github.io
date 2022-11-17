@@ -253,7 +253,7 @@ It's a lot for a poor researcher to take on themselves.
 
 ---
 
-## Data Classification
+## Data Classification<!-- .element: style="visibility: hidden;" -->
 
 DRAFT<!-- .element: class="watermark" -->
 
