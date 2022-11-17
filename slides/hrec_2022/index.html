@@ -41,7 +41,8 @@
     const params = new URLSearchParams(window.location.search);
     if (params.has('dc')){
         if (params.get('dc') == 1){
-            document.getElementById("data-classification").setAttribute("data-markdown","data_classification.html").removeAttribute("data-visibility");
+            document.getElementById("data-classification").setAttribute("data-markdown","data_classification.html");
+            document.getElementById("data-classification").removeAttribute("data-visibility");
         }
     }
       // More info about initialization & config:
