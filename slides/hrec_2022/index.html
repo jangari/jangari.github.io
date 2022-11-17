@@ -26,7 +26,7 @@
   <body>
     <div class="reveal">
       <div class="slides"><section id="intro" data-auto-animate data-markdown="pres.md" data-separator="^---$" data-separator-vertical="^\+\+\+$" notes-separator="^[nN]otes?:"></section>
-          <section id='data-classification' data-markdown="data_classification.html" style='visibility: hidden;'></section>
+          <section id='data-classification' data-visibility='hidden'></section>
           <section id='closing' data-markdown="close.md" data-separator="^---$" data-separator-vertical="^\+\+\+$" notes-separator="^[nN]otes?:"></section>
       </div>
     </div>
@@ -38,6 +38,12 @@
     <script src="../reveal.js/plugin/zoom/zoom.js"></script>
     <script src="../plugin/menu/menu.js"></script>
     <script>
+    const params = new URLSearchParams(window.location.search);
+    if (params.has('dc')){
+        if (params.get('dc') == 1){
+            document.getElementById("data-classification").setAttribute("data-markdown","data_classification.html").removeAttribute("data-visibility");
+        }
+    }
       // More info about initialization & config:
       // - https://revealjs.com/initialization/
       // - https://revealjs.com/config/
