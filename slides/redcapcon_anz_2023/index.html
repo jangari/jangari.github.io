@@ -7,11 +7,11 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
 
-    <title>Data Storage Implications for Third Party Services</title>
+    <title>REDCapCon ANZ 2023</title>
 
     <link rel="stylesheet" href="../reveal.js/dist/reset.css" />
     <link rel="stylesheet" href="../reveal.js/dist/reveal.css" />
-    <link rel="stylesheet" href="../dist/theme/acu_dark.css" id="theme" />
+    <link rel="stylesheet" href="../dist/theme/redcap.css" id="theme" />
 
     <!-- Custom additional CSS rules -->
     <link rel="stylesheet" href="../dist/theme/custom.css"/>
@@ -25,9 +25,8 @@
   </head>
   <body>
     <div class="reveal">
-      <div class="slides"><section id="intro" data-auto-animate data-markdown="pres.md" data-separator="^---$" data-separator-vertical="^\+\+\+$" notes-separator="^[nN]otes?:"></section>
-          <section id='data-classification' data-visibility='hidden'></section>
-          <section id='closing' data-markdown="close.md" data-separator="^---$" data-separator-vertical="^\+\+\+$" notes-separator="^[nN]otes?:"></section>
+      <div class="slides">
+          <section id="main" data-auto-animate data-markdown="pres.md" data-separator="^---$" data-separator-vertical="^\+\+\+$" notes-separator="^[nN]otes?:"></section>
       </div>
     </div>
 
@@ -38,13 +37,6 @@
     <script src="../reveal.js/plugin/zoom/zoom.js"></script>
     <script src="../plugin/menu/menu.js"></script>
     <script>
-    const params = new URLSearchParams(window.location.search);
-    if (params.has('dc')){
-        if (params.get('dc') == 1){
-            document.getElementById("data-classification").setAttribute("data-markdown","data_classification.html");
-            document.getElementById("data-classification").removeAttribute("data-visibility");
-        }
-    }
       // More info about initialization & config:
       // - https://revealjs.com/initialization/
       // - https://revealjs.com/config/
